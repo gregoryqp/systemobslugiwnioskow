@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+
+  text-decoration: none;
+}
+
+body {
+  padding: 20px 200px;
+  background: linear-gradient(45deg, rgb(36, 243, 174), rgb(0, 0, 0));
+  width: 100vw;
+  height: 100vh;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  color: whitesmoke;
+}
+.logo {
+  font-size: 50px;
+  font-weight: 100;
+  border: 1px solid whitesmoke;
+  box-shadow: 5px 3px 3px 1px whitesmoke;
+  color: whitesmoke;
+}
+.usernameLogoutAndTime {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.logoutButton {
+  background-color: rgba(19, 175, 123, 0.4);
+  margin-top: 2px;
+  padding: 4px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 2px 1px;
+  cursor: pointer;
+  color: whitesmoke;
+}
+.sentButton {
+  width: 120px;
+  height: 40px;
+  background-color: whitesmoke;
+  margin-top: 30px;
+  padding: 4px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 2px 1px;
+  cursor: pointer;
+  color: rgba(19, 175, 123);
+  font-size: 15px;
+}
+.sentButton:hover {
+  color: whitesmoke;
+  background-color: rgba(19, 175, 123, 0.2);
+}
+
+.logoutButton:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(19, 175, 123);
+  box-shadow: 0px 0px 5px 1px rgb(17, 177, 123);
+}
+
+.tillArea {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 150px 0 250px 0;
+}
+.homePageTiles {
+  width: 350px;
+  height: 250px;
+  border: 1px solid whitesmoke;
+  border-radius: 25px;
+  background-color: rgba(19, 175, 123, 0.4);
+  box-shadow: 0px 0px 15px 1px whitesmoke;
+  color: whitesmoke;
+  font-size: 25px;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.homePageTiles:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(19, 175, 123);
+  box-shadow: 0px 0px 15px 1px rgb(25, 252, 176);
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="mainPage.css" />
+    <link rel="stylesheet" href="loginForm.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Strona logowania</title>
+  </head>
+  <body>
+    <form class="formularzLogowania">
+      <h1>Zaloguj się</h1>
+
+      <label class="loginLabel" for="username">Nazwa użytkownika:</label>
+      <input
+        type="text"
+        class="loginUserData"
+        id="username"
+        name="username"
+        required
+      />
+      <label class="loginLabel" for="password">Hasło:</label>
+      <input
+        type="password"
+        class="loginUserData"
+        id="password"
+        name="password"
+        required
+      />
+      <button
+        type="submit"
+        class="sentButton loginButton"
+        onclick="window.location.href='mainPage.html'"
+      >
+        Zaloguj się
+      </button>
+    </form>
+  </body>
+</html>

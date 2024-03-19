@@ -1,0 +1,43 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.formularzLogowania {
+  width: 300px;
+  max-height: 350px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 20px;
+
+  background-color: rgba(19, 175, 123, 0.4);
+  box-shadow: 0px 0px 4px 2px whitesmoke;
+  border-radius: 5px;
+  /* border: 1px solid whitesmoke; */
+}
+
+h1 {
+  text-align: center;
+  color: whitesmoke;
+  margin-bottom: 10px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+.loginUserData {
+  width: 250px;
+  height: 35px;
+  border: none;
+  border-radius: 5px;
+  padding: 0px 5px;
+}
+
+.loginLabel {
+  margin: 20px 0px 5px 0px;
+}
+
+.loginButton {
+  margin: 30px auto;
+}

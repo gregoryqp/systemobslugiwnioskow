@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mainPage.css" />
+    <script src="indexLocal.js" defer></script>
+    <title>EAPP</title>
+  </head>
+  <body>
+    <nav>
+      <a href="mainPage.html" class="logo"><p>EAPP</p></a>
+
+      <div class="usernameLogoutAndTime">
+        <p>Nazwa użytkownika</p>
+        <p>godzina</p>
+        <button
+          class="logoutButton"
+          onclick="window.location.href='loginPage.html'"
+        >
+          Wyloguj
+        </button>
+      </div>
+    </nav>
+    <div class="formularz">
+      <select id="mojSelect" name="rodzaj" class="rodzajWniosku">
+        <option value="">--Kliknij aby wybrać wniosek--</option>
+        <option value="urlopu wypoczynkowego">Urlop wypoczynkowy</option>
+        <option value="urlopu bezplatnego">Urlop bezpłatny</option>
+        <option value="urlopu na zadanie">Urlop na żadanie</option>
+        <option value="Prywatne wyjście">Prywatne wyjście</option>
+        <option value="Pomoc świąteczna" class="wniosek">
+          Pomoc świąteczna
+        </option>
+        <option value="Pomoc wiosenna" class="wniosek">Pomoc wiosenna</option>
+      </select>
+      <div id="urlopOd" class="polaFormularza">
+        <label for="imie">Imię</label>
+        <input class="daneDoWniosku" id="name" name="imie" type="text" />
+      </div>
+      <div id="urlopOd" class="polaFormularza">
+        <label for="nawsiko">Nazwisko</label>
+        <input class="daneDoWniosku" id="surname" name="nazwisko" type="text" />
+      </div>
+
+      <div id="urlopOd" class="polaFormularza">
+        <label for="okresOd">Urlop od</label>
+        <input class="daneDoWniosku" name="okresOd" id="dateFrom" type="date" />
+      </div>
+
+      <div id="urlopDo" class="polaFormularza">
+        <label for="okresDo">Urlop do</label>
+        <input class="daneDoWniosku" name="okresDo" id="dateTo" type="date" />
+      </div>
+
+      <div id="lacznie" class="polaFormularza">
+        <label for="okresLacznie">Łączna ilość dni wolnych</label>
+        <input
+          class="daneDoWniosku"
+          name="okresLacznie"
+          id="daysSummary"
+          type="number"
+        />
+      </div>
+
+      <div class="sytuacja hideElement">
+        <label for="sytuacja">Sytuacja materialna</label>
+        <select name="sytuacja" class="sytuacjaMaterialna">
+          <option value="">--Wybierz sytuację materialną</option>
+          <option value="Bardzo dobra">Bardzo dobra</option>
+          <option value="Dobra">Dobra</option>
+          <option value="Ciężka">Ciężka</option>
+        </select>
+      </div>
+      <button class="sentButton" id="sentData">Wyślij</button>
+    </div>
+
+    <div class="podsumowanie"></div>
+  </body>
+</html>
